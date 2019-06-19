@@ -14211,7 +14211,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> I will choose AdaBoostClassifier. Because in the training it does not overfit like the RandomForest also has a good accuracy in training and the best perfomance in the testing set , also has a good Fscore in both cases and it not takes a long time like SVC</p>
+<p><strong>Answer: </strong> I will choose AdaBoostClassifier. Because in the training it does not overfit like the RandomForest also has a good accuracy in training and the best perfomance in the testing set , also has a good Fscore in both cases and it not takes a long time like SVC and Adaboost suits the data very well because we transform it to binary data in the hot-encoding and this helps to the algorithm when it generates the decision trees</p>
 
 </div>
 </div>
@@ -14231,7 +14231,7 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> In Layman's terms: if we have a heavy work to do , it's more easy if we have a bounch of specialist to do the work , right? Imagine if we have to construct a house. We need a person to do the foundations, also we need an electrician , and a plumber , and so on. This is Adaboost , a bunch of weak learners that works in order to improve the work of the previous learner to make a better prediction to maximize accuracy and minimize the number of errors.</p>
+<p><strong>Answer: </strong> In Layman's terms: if we have a heavy work to do , it's more easy if we have a bounch of specialist to do the work , right? Imagine if we have to construct a house. We need a person to do the foundations, also we need an electrician , and a plumber , and so on. This is Adaboost , a bunch of weak learners (our construction specialist ) tipically: decisions trees. Each tree works with the data and their feautures to create the rules for predicting the possible donator income. Adaboost runs several times and each time looks for the bad predictions in order to improve it the next time to make a better Decision tree. And it continues until a number of times or till we can't improve more. In the end, we have a bunch of decisions trees that vote for the possible donator income , we take what the majority voted and that is our final prediction.</p>
 
 </div>
 </div>
